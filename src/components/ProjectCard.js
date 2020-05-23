@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProjectCard = ({ image, title, description, role, tools, demo='', code='', info='', date }) => {
+const ProjectCard = ({ image, title, description, role, tools, demo='', code='', info='', meta }) => {
 
-    const imageSrc = image ? require(image) : '';
+    const imageSrc = image ? image : '';
 
 
 
@@ -20,9 +20,9 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
 
 
 
-    const top = <div className="top">
+    const left = <span className="left">
   			  	    <img src={imageSrc} />
-  			    </div>
+  			    </span>
 
     const mainDesc = <div className="mainDesc">
   					<h3>{title}</h3>
@@ -37,17 +37,21 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
 
 	const bottom = <div className="bottom">
 						<span className="links">{ demoPart } { codePart } { infoPart }</span>
-				  	  	<span className="date">Date: { date }</span>
+				  	  	<span className="meta">{ meta }</span>
 				  	</div>
 
 				  	
 
 	return (<div className="project-card">
-		{top}
-		{mainDesc}
-		{mainInfo}
-		{bottom}
-	</div>);
+				<div className="project-card-grid">
+				{left}
+				<div className="main">
+					{mainDesc}
+					{mainInfo}
+					{bottom}
+				</div>
+			</div>
+		</div>);
 };
 
 export default ProjectCard;

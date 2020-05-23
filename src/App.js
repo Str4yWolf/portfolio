@@ -5,6 +5,8 @@ import ProjectCard from './components/ProjectCard';
 import SocialLinkedIn from './assets/linkedin.svg';
 import SocialXing from './assets/xing.svg';
 import SocialGithub from './assets/github.svg';
+import ProjectKanaSensei from './assets/kana-sensei.png';
+import ProjectKoyoLearning from './assets/koyo-learning.png';
 
 const App = () => {
   const navItems = [{ title: 'Home', href: '#home' },
@@ -12,41 +14,41 @@ const App = () => {
                     { title: 'Projects', href: '#projects' },
                     { title: 'Credits', href: '#credits' }];
   const projectItems = [{ image: '',
+                          title: 'Web Development 2020',
+                          description: 'A project to learn modern web development and improve programming skills. Includes acquiring design patterns by studying existing websites, creating own designs, building mini tools (e.g., unit converter), and building templates. The goal is to get skilled in freelance web development and get started with building user-friendly and scaleable web apps.',
+                          role: 'Front-end developer, web designer, back-end developer',
+                          tools: 'HTML5, CSS3, VanillaJS, React.js, Node.js, Express.js, SASS, MySQL',
+                          demo: '',
+                          code: '',
+                          info: '',
+                          meta: 'Learn and Develop; 2020' },
+                          { image: '',
+                          title: 'Stockhub',
+                          description: 'A finance platform for traders and people interested in stock trading. The aim is to create a scaleable platform with an optimized user experience.',
+                          role: 'Front-end developer, management team, back-end trainee, late co-founder',
+                          tools: 'React.js, React Semantic UI, Node.js, Express.js, Confluence',
+                          demo: '',
+                          code: '',
+                          info: 'https://www.stockhub.de/',
+                          meta: 'Startup Project; Since December 2019' },
+                        { image: ProjectKoyoLearning,
                           title: 'Koyo Learning',
-                          description: 'A gamified classroom environment for interested people',
-                          role: 'Research analysis',
-                          tools: 'Google Docs',
+                          description: 'A gamified remote learning platform geared toward middle schoolers to help provide an immersive classroom experience. Hackathon idea to address the challenge of keeping up education in times of physical social distancing. The goal was to come up with and pitch an actionable business solution while developing and demonstrating a working prototype at the same time.',
+                          role: 'Research analyst, gamification designer',
+                          tools: 'Google Docs, AdobeXD',
                           demo: '',
                           code: '',
                           info: 'https://devpost.com/software/koyo-learning',
-                          date: '2020' },
-                          { image: '',
-                          title: 'Stockhub',
-                          description: 'A finance platform for traders',
-                          role: 'Front-end developer, management team',
-                          tools: 'React.js, Node.js, Confluence',
-                          demo: '',
-                          code: '',
-                          info: 'https://stockhub.de/',
-                          date: '2020' },
-                          { image: '',
-                          title: 'Feastbook',
-                          description: 'A platform for ',
-                          role: 'Front-end developer, management team',
-                          tools: 'React.js, Node.js, Confluence',
-                          demo: '',
-                          code: '',
-                          info: 'https://stockhub.de/',
-                          date: '2020' },
-                          { image: '',
+                          meta: 'EuVSVirus Hackathon; April 24 - 27, 2020' },
+                          { image: ProjectKanaSensei,
                           title: 'Kana Sensei',
-                          description: 'A gamified web app to learn the Japanese phonetic script (Kana). A Bachelor\'s project preceded by research and followed by user evaluations.',
+                          description: 'A gamified web app to learn the Japanese phonetic script (Kana). A Bachelor\'s project preceded by research and followed by user evaluations. The goal was to research how the use of game design elements affects user learning experience. Key aspects were intuitive and minimalist design coupled together with learning guidance (explore, learn, test) and learning theory (Spaced Repetition).',
                           role: 'Front-end developer, UX / gamification designer, researcher',
-                          tools: 'Vue.js, Wordpress',
+                          tools: 'Vue.js, WordPress',
                           demo: 'https://str4ywolf.github.io/#/',
                           code: 'https://github.com/Str4yWolf/Gamification-of-Kana',
                           info: 'https://kanasensei.wordpress.com/',
-                          date: '2020' }]
+                          meta: 'Bachelor\'s Project; April - October 2019' }]
   return (
     <div className="App">
       <header id="home" className="home">
@@ -61,7 +63,7 @@ const App = () => {
         <div className="about">  
           <h2>About</h2>
           <p>
-            Hello there. My name is Michael and I'm a passionate web developer. Currently, I'm doing front-end development <strong>(HTML/JS/CSS) + ReactJS</strong>. Also learning full-stack <strong>(Node.js, Express.js, MySQL)</strong> to be able to build and host full-fledged website. 
+            Welcome! My name is Michael and I'm a passionate web developer. Currently, I'm doing front-end development <strong>(HTML/JS/CSS) + ReactJS</strong>. Also learning full-stack <strong>(Node.js, Express.js, MySQL)</strong> to be able to build and host full-fledged website. 
           </p>
         </div>
 
@@ -111,7 +113,7 @@ const App = () => {
                                           demo={project.demo}
                                           code={project.code}
                                           info={project.info}
-                                          date={project.date}
+                                          meta={project.meta}
                                         />) }
         </div>
       </main>
