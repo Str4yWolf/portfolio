@@ -1,2 +1,4 @@
-### Portfolio page for Michael WK Huang
+## portfolio
+Portfolio page for Michael WK Huang
+
 Made with React.js, SCSS
