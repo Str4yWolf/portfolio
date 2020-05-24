@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f74002e.chunk.css",
+    "main.js": "/static/js/main.2b539c46.chunk.js",
+    "main.js.map": "/static/js/main.2b539c46.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
+    "static/js/2.44fad725.chunk.js": "/static/js/2.44fad725.chunk.js",
+    "static/js/2.44fad725.chunk.js.map": "/static/js/2.44fad725.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cd2089cda98552ab86b02e423011a4eb.js": "/precache-manifest.cd2089cda98552ab86b02e423011a4eb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6f74002e.chunk.css.map": "/static/css/main.6f74002e.chunk.css.map",
+    "static/js/2.44fad725.chunk.js.LICENSE.txt": "/static/js/2.44fad725.chunk.js.LICENSE.txt",
+    "static/media/github.svg": "/static/media/github.ddc25012.svg",
+    "static/media/kana-sensei.png": "/static/media/kana-sensei.1e72be64.png",
+    "static/media/koyo-learning.png": "/static/media/koyo-learning.07892023.png",
+    "static/media/linkedin.svg": "/static/media/linkedin.4b475fb3.svg",
+    "static/media/xing.svg": "/static/media/xing.7941e457.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5fc83a6.js",
+    "static/js/2.44fad725.chunk.js",
+    "static/css/main.6f74002e.chunk.css",
+    "static/js/main.2b539c46.chunk.js"
+  ]
+}
