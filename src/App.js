@@ -63,7 +63,7 @@ const App = () => {
         <div className="about">  
           <h2>About</h2>
           <p>
-            Welcome! My name is Michael and I'm a passionate web developer. Currently, I'm doing front-end development <strong>(HTML/JS/CSS) + ReactJS</strong>. Also learning full-stack <strong>(Node.js, Express.js, MySQL)</strong> to be able to build and host full-fledged website. 
+            Hey there! My name is Michael and I'm an aspiring web developer. Currently, I'm doing front-end development <strong>(HTML/JS/CSS) + ReactJS</strong>. Also learning full-stack <strong>(Node.js, Express.js, MySQL)</strong> to be able to build and host full-fledged website. 
           </p>
         </div>
 
