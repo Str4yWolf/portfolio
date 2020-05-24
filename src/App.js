@@ -10,9 +10,9 @@ import ProjectKoyoLearning from './assets/koyo-learning.png';
 
 const App = () => {
   const navItems = [{ title: 'Home', href: '#home' },
-                    { title: 'About', href: '#about' },
+                    { title: 'About', href: '#specialization' },
                     { title: 'Projects', href: '#projects' },
-                    { title: 'Credits', href: '#credits' }];
+                    { title: 'Social', href: '#footer' }];
   const projectItems = [{ image: '',
                           title: 'Web Development 2020',
                           description: 'A project to learn modern web development and improve programming skills. Includes acquiring design patterns by studying existing websites, creating own designs, building mini tools (e.g., unit converter), and building templates. The goal is to get skilled in freelance web development and get started with building user-friendly and scaleable web apps.',
@@ -20,7 +20,7 @@ const App = () => {
                           tools: 'HTML5, CSS3, VanillaJS, React.js, Node.js, Express.js, SASS, MySQL',
                           demo: '',
                           code: '',
-                          info: '',
+                          info: 'https://github.com/Str4yWolf/webdev2020',
                           meta: 'Learn and Develop; 2020' },
                           { image: 'https://www.stockhub.de/images/6925c4434ea8ac9fb0ab5797963355d4-logo_white.png',
                           title: 'Stockhub',
@@ -57,17 +57,103 @@ const App = () => {
         </nav>
       </header>
 
-      <GapSpacer height="50vh" />
+      <GapSpacer height="35vh" />
 
       <main id="about">
         <div className="about">  
-          <h2>About</h2>
+          <h1>Hey there, I'm Michael.</h1>
           <p>
-            Hey there! My name is Michael and I'm an aspiring web developer. Currently, I'm doing front-end development <strong>(HTML/JS/CSS) + ReactJS</strong>. Also learning full-stack <strong>(Node.js, Express.js, MySQL)</strong> to be able to build and host full-fledged website. 
+            I'm an <strong>aspiring web developer</strong> with a B.S. in Computer Science.
+            <br />
+            I love creating useful web apps with UX and functional design in mind.
           </p>
         </div>
 
+        <div className="blocks">
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+
         <GapSpacer height="15vh" />
+
+        <div id="specialization" className="specialization">
+          <GapSpacer height="2vh" />
+          <h1>Things I do</h1>
+          <div className="grid">
+            <span>
+              <h2>Front-end development</h2>
+              <p>
+                Themed websites with a focus on simple, interactive UX design. 
+              </p>
+              <br />
+              <p>
+                <h4>Main tools</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3 or SASS</li>
+                  <li>VanillaJS or React.js</li>
+                  <li>Interactive design</li>
+                </ul>
+              </p>
+            </span>
+            <span>
+              <h2>Web app development</h2>
+              <p>
+                Web app tools to solve simple or more complex user tasks.
+              </p>
+              <br />
+              <p>
+                <h4>Main tools</h4>
+                <ul>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>Functional Design</li>
+                  <li>Learning Theory</li>
+                </ul>
+              </p>
+            </span>
+            <span>
+              <h2>Learning and research</h2>
+              <p>
+                I enjoy learning new technologies and doing research to become a better developer.
+              </p>
+              <p>
+                <h4>Main interests</h4>
+                <ul>
+                  <li>Back-end development</li>
+                  <li>Programming to solve problems</li>
+                  <li>Language learning</li>
+                  <li>Gamification</li>
+                </ul>
+              </p>
+            </span>
+          </div>
+        </div>
+
+        <GapSpacer height="25vh" />
+
+        <div id="projects" className="projects">
+        <GapSpacer height="10vh" />
+          <h1>Projects</h1>
+
+          <GapSpacer height="5vh" />
+
+          { projectItems.map(project => <ProjectCard
+                                          image={project.image}
+                                          title={project.title}
+                                          description={project.description}
+                                          role={project.role}
+                                          tools={project.tools}
+                                          demo={project.demo}
+                                          code={project.code}
+                                          info={project.info}
+                                          meta={project.meta}
+                                        />) }
+        </div>
+
+        <GapSpacer height="60vh" />
 
         <div className="social">
           <a href="https://www.linkedin.com/in/michael-woei-kang-huang-274631194/" target="_blank">
@@ -95,43 +181,25 @@ const App = () => {
             />
           </a>
         </div>
-
-        <GapSpacer height="15vh" />
-
-        <div id="projects" className="projects">
-
-          <h2>Projects</h2>
-
-          <GapSpacer height="5vh" />
-
-          { projectItems.map(project => <ProjectCard
-                                          image={project.image}
-                                          title={project.title}
-                                          description={project.description}
-                                          role={project.role}
-                                          tools={project.tools}
-                                          demo={project.demo}
-                                          code={project.code}
-                                          info={project.info}
-                                          meta={project.meta}
-                                        />) }
-        </div>
       </main>
 
-      <GapSpacer height="50vh" />
+      <GapSpacer height="10vh" />
 
-      <footer id="credits">
-        <h2>Icon credits</h2>
-        <strong>LinkedIn: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
-        <br />
-        <strong>XING: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
-        <br />
-        <strong>Github: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
-        <br />
+      
+      <footer id="footer" class="footer">
+        <p>
+          <h2>Icon credits</h2>
+          <strong>LinkedIn: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
+          <br />
+          <strong>XING: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
+          <br />
+          <strong>Github: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
+          <br />
 
-        <GapSpacer height="10vh" />
+          <GapSpacer height="10vh" />
 
-        <sub>&copy; 2020, Michael Woei Kang Huang. All rights reserved.</sub>      
+          <sub>2020, Michael Woei Kang Huang</sub>
+        </p>
       </footer>
     </div>
   );
