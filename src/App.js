@@ -105,7 +105,7 @@ const App = () => {
             <span>
               <h2>Web app development</h2>
               <p>
-                Web app tools to solve simple or more complex user tasks.
+                Web app tools to solve simple or more complex tasks.
               </p>
               <br />
               <p>
@@ -113,15 +113,15 @@ const App = () => {
                 <ul>
                   <li>React.js</li>
                   <li>Node.js</li>
-                  <li>Functional Design</li>
-                  <li>Learning Theory</li>
+                  <li>Functional design</li>
+                  <li>Learning theory</li>
                 </ul>
               </p>
             </span>
             <span>
               <h2>Learning and research</h2>
               <p>
-                I enjoy learning new technologies and doing research to become a better developer.
+                I enjoy learning new technologies and doing research to help develop better products.
               </p>
               <p>
                 <h4>Main interests</h4>
@@ -157,8 +157,11 @@ const App = () => {
                                         />) }
         </div>
 
-        <GapSpacer height="60vh" />
+        <GapSpacer height="45vh" />
+        <p>Would be happy to get in touch with you!</p>
 
+        <GapSpacer height="10vh" />
+        
         <div className="social">
           <a href="https://www.linkedin.com/in/michael-woei-kang-huang-274631194/" target="_blank">
             <img 
