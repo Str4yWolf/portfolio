@@ -7,13 +7,15 @@ import SocialXing from './assets/xing.svg';
 import SocialGithub from './assets/github.svg';
 import ProjectKanaSensei from './assets/kana-sensei.png';
 import ProjectKoyoLearning from './assets/koyo-learning.png';
+import ProjectStockhub from './assets/stockhub.png';
+import ProjectWIP from './assets/wip.png';
 
 const App = () => {
   const navItems = [{ title: 'Home', href: '#home' },
                     { title: 'About', href: '#specialization' },
                     { title: 'Projects', href: '#projects' },
                     { title: 'Social', href: '#footer' }];
-  const projectItems = [{ image: '',
+  const projectItems = [{ image: ProjectWIP,
                           title: 'Web Development 2020',
                           description: 'A project to learn modern web development and improve programming skills. Includes acquiring design patterns by studying existing websites, creating own designs, building mini tools (e.g., unit converter), and building templates. The goal is to get skilled in freelance web development and get started with building user-friendly and scaleable web apps.',
                           role: 'Front-end developer, web designer, back-end developer',
@@ -22,7 +24,7 @@ const App = () => {
                           code: '',
                           info: 'https://github.com/Str4yWolf/webdev2020',
                           meta: 'Learn and Develop; 2020' },
-                          { image: 'https://www.stockhub.de/images/6925c4434ea8ac9fb0ab5797963355d4-logo_white.png',
+                          { image: ProjectStockhub,
                           title: 'Stockhub',
                           description: 'A finance platform for traders and people interested in stock trading. The aim is to create a scaleable platform with an optimized user experience.',
                           role: 'Front-end developer, management team, back-end trainee, late co-founder',
@@ -57,7 +59,9 @@ const App = () => {
         </nav>
       </header>
 
-      <GapSpacer height="35vh" />
+      <div class="mobile">Note that this page has not been optimized for small screens yet.</div>
+
+      <GapSpacer height="25vh" />
 
       <main id="about">
         <div className="about">  
