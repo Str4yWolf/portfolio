@@ -59,7 +59,7 @@ const App = () => {
         </nav>
       </header>
 
-      <div class="mobile">Note that this page has not been optimized for small screens yet.</div>
+      <div class="mobile">Please note that this page has not been optimized for small screens yet.</div>
 
       <GapSpacer height="25vh" />
 
