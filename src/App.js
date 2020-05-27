@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 import GapSpacer from './components/GapSpacer';
 import ProjectCard from './components/ProjectCard';
@@ -11,10 +11,43 @@ import ProjectStockhub from './assets/stockhub.png';
 import ProjectWIP from './assets/wip.png';
 
 const App = () => {
-  const navItems = [{ title: 'Home', href: '#home' },
-                    { title: 'About', href: '#specialization' },
-                    { title: 'Projects', href: '#projects' },
-                    { title: 'Social', href: '#footer' }];
+  let navbar
+  let sticky
+
+  useEffect(() => {
+      navbar = document.getElementById("home");
+      sticky = navbar.offsetTop + Math.floor(window.screen.height / 4.74);
+      window.onscroll = onScrollFunction;
+  })
+
+  const onScrollFunction = () => {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+  const navItems = [{ title: 'Home', href: '#App', scroll: function() { window.scroll({
+                                          top: 0,
+                                          left: 0,
+                                          behavior: 'smooth'
+                                        })} },
+                    { title: 'About', href: '#specialization', scroll: function() { window.scroll({
+                                          top: 600,
+                                          left: 0,
+                                          behavior: 'smooth'
+                                        })} },
+                    { title: 'Projects', href: '#projects' , scroll: function() { window.scroll({
+                                          top: 1450,
+                                          left: 0,
+                                          behavior: 'smooth'
+                                        })}},
+                    { title: 'Social', href: '#footer', scroll: function() { window.scroll({
+                                          top: 3000,
+                                          left: 0,
+                                          behavior: 'smooth'
+                                        })} }];
   const projectItems = [{ image: ProjectWIP,
                           title: 'Web Development 2020',
                           description: 'A project to learn modern web development and improve programming skills. Includes acquiring design patterns by studying existing websites, creating own designs, building mini tools (e.g., unit converter), and building templates. The goal is to get skilled in freelance web development and get started with building user-friendly and scaleable web apps.',
@@ -52,12 +85,7 @@ const App = () => {
                           info: 'https://kanasensei.wordpress.com/',
                           meta: 'Bachelor\'s Project; April - October 2019' }]
   return (
-    <div className="App">
-      <header id="home" className="home">
-        <nav>
-          { navItems.map(item => <a href={item.href}>{ item.title }</a> ) }
-        </nav>
-      </header>
+    <div id="App" className="App">
 
       <div class="mobile">Please note that this page has not been optimized for small screens yet.</div>
 
@@ -67,11 +95,20 @@ const App = () => {
         <div className="about">  
           <h1>Hey there, I'm Michael.</h1>
           <p>
-            I'm an <strong>aspiring web developer</strong> with a B.S. in Computer Science.
-            <br />
-            I love creating useful web apps with UX and functional design in mind.
+            My goal is to create rich web experiences and useful web apps with functional design in mind. 
           </p>
         </div>
+
+        <GapSpacer height="10vh" />
+
+        <button
+          class="contact"
+          onClick={() => window.scroll({
+                                          top: 637,
+                                          left: 0,
+                                          behavior: 'smooth'
+                                        })}
+          >Learn more</button>
 
         <div className="blocks">
           <span />
@@ -80,10 +117,17 @@ const App = () => {
           <span />
         </div>
 
-        <GapSpacer height="15vh" />
+
+          <GapSpacer height="25vh" />
+
+      <header id="home" className="home">
+        <nav>
+          { navItems.map(item => <a href={item.href} onClick={item.scroll}>{ item.title }</a> ) }
+        </nav>
+      </header>
 
         <div id="specialization" className="specialization">
-          <GapSpacer height="2vh" />
+          <GapSpacer height="6vh" />
           <h1>Things I do</h1>
           <div className="grid">
             <span>
