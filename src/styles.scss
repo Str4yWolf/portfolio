@@ -5,6 +5,7 @@
 	color: #444;
 	text-align: center;
 	word-wrap: break-word;
+	scroll-behavior: smooth;
 }
 
 .mobile {
@@ -136,7 +137,7 @@ main {
 	.about {
 		position: relative;
 		top: 42px;
-		width: 40vw;
+		width: 50vw;
 		margin: 0 auto;
 		font-size: 120%;
 	}

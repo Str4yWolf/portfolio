@@ -28,29 +28,13 @@ const App = () => {
     }
   }
 
-  const navItems = [{ title: 'Home', href: '#App', scroll: function() { window.scroll({
-                                          top: 0,
-                                          left: 0,
-                                          behavior: 'smooth'
-                                        })} },
-                    { title: 'About', href: '#specialization', scroll: function() { window.scroll({
-                                          top: 600,
-                                          left: 0,
-                                          behavior: 'smooth'
-                                        })} },
-                    { title: 'Projects', href: '#projects' , scroll: function() { window.scroll({
-                                          top: 1450,
-                                          left: 0,
-                                          behavior: 'smooth'
-                                        })}},
-                    { title: 'Social', href: '#footer', scroll: function() { window.scroll({
-                                          top: 3000,
-                                          left: 0,
-                                          behavior: 'smooth'
-                                        })} }];
+  const navItems = [{ title: 'Home', href: '#App' },
+                    { title: 'About', href: '#specialization' },
+                    { title: 'Projects', href: '#projects' },
+                    { title: 'Social', href: '#footer' }];
   const projectItems = [{ image: ProjectWIP,
                           title: 'Web Development 2020',
-                          description: 'A project to learn modern web development and improve programming skills. Includes acquiring design patterns by studying existing websites, creating own designs, building mini tools (e.g., unit converter), and building templates. The goal is to get skilled in freelance web development and get started with building user-friendly and scaleable web apps.',
+                          description: 'A project focused on modern web development and program design patterns. The goal is to get skilled in freelance web development and build various web apps across several domains (e.g., educational, practical tools, small business solutions, ...).',
                           role: 'Front-end developer, web designer, back-end developer',
                           tools: 'HTML5, CSS3, VanillaJS, React.js, Node.js, Express.js, SASS, MySQL',
                           demo: '',
@@ -68,7 +52,7 @@ const App = () => {
                           meta: 'Startup Project; Since December 2019' },
                         { image: ProjectKoyoLearning,
                           title: 'Koyo Learning',
-                          description: 'A gamified remote learning platform geared toward middle schoolers to help provide an immersive classroom experience. Hackathon idea to address the challenge of keeping up education in times of physical social distancing. The goal was to come up with and pitch an actionable business solution while developing and demonstrating a working prototype at the same time.',
+                          description: 'A gamified remote learning platform to provide an immersive classroom experience. Hackathon idea to help provide education in times of physical social distancing. The goal was to come up with and pitch an actionable business solution while developing and demonstrating a working prototype.',
                           role: 'Research analyst, gamification designer',
                           tools: 'Google Docs, AdobeXD',
                           demo: '',
@@ -77,7 +61,7 @@ const App = () => {
                           meta: 'EuVSVirus Hackathon; April 24 - 27, 2020' },
                           { image: ProjectKanaSensei,
                           title: 'Kana Sensei',
-                          description: 'A gamified web app to learn the Japanese phonetic script (Kana). A Bachelor\'s project preceded by research and followed by user evaluations. The goal was to research how the use of game design elements affects user learning experience. Key aspects were intuitive and minimalist design coupled together with learning guidance (explore, learn, test) and learning theory (Spaced Repetition).',
+                          description: 'A gamified web app to help learn the Japanese phonetic script (Kana). The goal was to research how the use of game design elements affects learning. Key aspects were intuitive and minimalist design combined with UX design and learning theory (Spaced Repetition).',
                           role: 'Front-end developer, UX / gamification designer, researcher',
                           tools: 'Vue.js, Quasar, WordPress',
                           demo: 'https://str4ywolf.github.io/#/',
@@ -93,22 +77,17 @@ const App = () => {
 
       <main id="about">
         <div className="about">  
-          <h1>Hey there, I'm Michael.</h1>
+          <h2>Intuitive and user-friendly web apps augmented with functional design.</h2>
           <p>
-            My goal is to create rich web experiences and useful web apps with functional design in mind. 
+             I'm an aspiring web developer with a passion for educational apps and little tools to help you achieve your goal. 
           </p>
         </div>
 
         <GapSpacer height="10vh" />
 
-        <button
-          class="contact"
-          onClick={() => window.scroll({
-                                          top: 637,
-                                          left: 0,
-                                          behavior: 'smooth'
-                                        })}
-          >Learn more</button>
+        <a href="#specialization">
+          <button class="contact">Learn more</button>
+        </a>
 
         <div className="blocks">
           <span />
@@ -128,7 +107,7 @@ const App = () => {
 
         <div id="specialization" className="specialization">
           <GapSpacer height="6vh" />
-          <h1>Things I do</h1>
+          <h1>How I could help</h1>
           <div className="grid">
             <span>
               <h2>Front-end development</h2>
@@ -140,8 +119,8 @@ const App = () => {
                 <h4>Main tools</h4>
                 <ul>
                   <li>HTML5</li>
-                  <li>CSS3 or SASS</li>
-                  <li>VanillaJS or React.js</li>
+                  <li>CSS3 / SASS</li>
+                  <li>VanillaJS / React.js</li>
                   <li>Interactive design</li>
                 </ul>
               </p>
