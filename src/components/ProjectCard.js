@@ -6,22 +6,22 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
 
 
 
-    const demoPart = demo ? <a href={demo} target="_blank">
+    const demoPart = demo ? <a href={demo} target="_blank" rel="noopener noreferrer">
     							<i class="material-icons" style={{color: 'green'}}>play_arrow</i>
     						</a> : <span />
 
-    const codePart = code ? <a href={code} target="_blank">
+    const codePart = code ? <a href={code} target="_blank" rel="noopener noreferrer">
     							<i class="material-icons" style={{color: 'purple'}}>code</i>
     						</a> : <span />
 
-    const infoPart = info ? <a href={info} target="_blank">
+    const infoPart = info ? <a href={info} target="_blank" rel="noopener noreferrer">
     							<i class="material-icons" style={{color: 'orange'}}>launch</i>
     						</a> : <span />
 
 
 
     const left = <span className="left">
-  			  	    <img src={imageSrc} />
+  			  	    <img src={imageSrc} alt={title} />
   			    </span>
 
     const mainDesc = <div className="mainDesc">

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './styles.scss';
 import GapSpacer from './components/GapSpacer';
 import ProjectCard from './components/ProjectCard';
@@ -11,22 +11,6 @@ import ProjectStockhub from './assets/stockhub.png';
 import ProjectWIP from './assets/wip.png';
 
 const App = () => {
-  let navbar
-  let sticky
-
-  useEffect(() => {
-      navbar = document.getElementById("home");
-      sticky = navbar.offsetTop + Math.floor(window.screen.height / 4.74);
-      window.onscroll = onScrollFunction;
-  })
-
-  const onScrollFunction = () => {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
 
   const navItems = [{ title: 'Home', href: '#App' },
                     { title: 'About', href: '#specialization' },
@@ -186,7 +170,7 @@ const App = () => {
         <GapSpacer height="10vh" />
         
         <div className="social">
-          <a href="https://www.linkedin.com/in/michael-woei-kang-huang-274631194/" target="_blank">
+          <a href="https://www.linkedin.com/in/michael-woei-kang-huang-274631194/" target="_blank" rel="noopener noreferrer">
             <img 
               src={SocialLinkedIn} 
               alt="Michael Woei Kang Huang on LinkedIn"
@@ -194,7 +178,7 @@ const App = () => {
               width="50vw"
             />
           </a>
-          <a href="https://www.xing.com/profile/MichaelWoeiKang_Huang/cv" target="_blank">
+          <a href="https://www.xing.com/profile/MichaelWoeiKang_Huang/cv" target="_blank" rel="noopener noreferrer">
             <img 
               src={SocialXing} 
               alt="Michael Woei Kang Huang on XING"
@@ -202,7 +186,7 @@ const App = () => {
               width="50vw"
             />
           </a>
-          <a href="https://github.com/Str4yWolf" target="_blank">
+          <a href="https://github.com/Str4yWolf" target="_blank" rel="noopener noreferrer">
             <img 
               src={SocialGithub} 
               alt="Michael Woei Kang Huang on Github"
