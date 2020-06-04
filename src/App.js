@@ -3,7 +3,6 @@ import './styles.scss';
 import GapSpacer from './components/GapSpacer';
 import ProjectCard from './components/ProjectCard';
 import SocialLinkedIn from './assets/linkedin.svg';
-import SocialXing from './assets/xing.svg';
 import SocialGithub from './assets/github.svg';
 import ProjectKanaSensei from './assets/kana-sensei.png';
 import ProjectKoyoLearning from './assets/koyo-learning.png';
@@ -18,7 +17,7 @@ const App = () => {
                     { title: 'Social', href: '#footer' }];
   const projectItems = [{ image: ProjectWIP,
                           title: 'Web Development 2020',
-                          description: 'A project focused on modern web development and program design patterns. The goal is to get skilled in freelance web development and build various web apps across several domains (e.g., educational, practical tools, small business solutions, ...).',
+                          description: 'A project focused on modern web development and program design patterns. The objective is to do freelance web development and build various web apps across several domains (e.g., educational, practical tools, small business solutions, ...).',
                           role: 'Front-end developer, web designer, back-end developer',
                           tools: 'HTML5, CSS3, VanillaJS, React.js, Node.js, Express.js, SASS, MySQL',
                           demo: '',
@@ -27,7 +26,7 @@ const App = () => {
                           meta: 'Learn and Develop; 2020' },
                           { image: ProjectStockhub,
                           title: 'Stockhub',
-                          description: 'A finance platform for traders and people interested in stock trading. The aim is to create a scaleable platform with an optimized user experience.',
+                          description: 'A finance platform that unites traders and people interested in stock trading. The aim is to create a scaleable platform with an optimized user experience.',
                           role: 'Front-end developer, management team, back-end trainee, late co-founder',
                           tools: 'React.js, React Semantic UI, Node.js, Express.js, Confluence',
                           demo: '',
@@ -55,33 +54,25 @@ const App = () => {
   return (
     <div id="App" className="App">
 
-      <div class="mobile">Please note that this page has not been optimized for small screens yet.</div>
 
-      <GapSpacer height="25vh" />
 
       <main id="about">
         <div className="about">  
           <h2>Intuitive and user-friendly web apps augmented with functional design.</h2>
           <p>
-             I'm an aspiring web developer with a passion for educational apps and little tools to help you achieve your goal. 
+             I'm an aspiring web developer with a passion for building educational apps and little tools to help you achieve your goal. 
           </p>
-        </div>
-
-        <GapSpacer height="10vh" />
 
         <a href="#specialization">
-          <button class="contact">Learn more</button>
+          <button>Learn more</button>
         </a>
-
-        <div className="blocks">
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
 
 
-          <GapSpacer height="25vh" />
+
+        
+
+
 
       <header id="home" className="home">
         <nav>
@@ -90,6 +81,7 @@ const App = () => {
       </header>
 
         <div id="specialization" className="specialization">
+          <span className="specialization-banner" />
           <GapSpacer height="6vh" />
           <h1>How I could help</h1>
           <div className="grid">
@@ -178,14 +170,6 @@ const App = () => {
               width="50vw"
             />
           </a>
-          <a href="https://www.xing.com/profile/MichaelWoeiKang_Huang/cv" target="_blank" rel="noopener noreferrer">
-            <img 
-              src={SocialXing} 
-              alt="Michael Woei Kang Huang on XING"
-              height="50vh"
-              width="50vw"
-            />
-          </a>
           <a href="https://github.com/Str4yWolf" target="_blank" rel="noopener noreferrer">
             <img 
               src={SocialGithub} 
@@ -197,23 +181,9 @@ const App = () => {
         </div>
       </main>
 
-      <GapSpacer height="10vh" />
 
-      
-      <footer id="footer" class="footer">
-        <p>
-          <h2>Icon credits</h2>
-          <strong>LinkedIn: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
-          <br />
-          <strong>XING: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
-          <br />
-          <strong>Github: </strong><span>Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
-          <br />
-
-          <GapSpacer height="10vh" />
-
-          <sub>2020, Michael Woei Kang Huang</sub>
-        </p>
+      <footer id="footer">
+        <sup>&copy; 2020, Michael Woei Kang Huang</sup>
       </footer>
     </div>
   );
