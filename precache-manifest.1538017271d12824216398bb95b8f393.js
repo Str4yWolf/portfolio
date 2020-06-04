@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ea7f7ff83d8520a0a70152b6323da53",
+    "revision": "90e983004a4d0a9479fc901bd19c821d",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "cc5253d599c995851624",
-    "url": "/portfolio/static/css/main.91549cf1.chunk.css"
+    "revision": "9eb7f3a9db752eb255a8",
+    "url": "/portfolio/static/css/main.2821015a.chunk.css"
   },
   {
-    "revision": "307073425f9a43777437",
-    "url": "/portfolio/static/js/2.5ab4bb21.chunk.js"
+    "revision": "c5fbb4869f971a862ff5",
+    "url": "/portfolio/static/js/2.6bd8e025.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/portfolio/static/js/2.5ab4bb21.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.6bd8e025.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cc5253d599c995851624",
-    "url": "/portfolio/static/js/main.0b86f0a9.chunk.js"
+    "revision": "9eb7f3a9db752eb255a8",
+    "url": "/portfolio/static/js/main.3e33343a.chunk.js"
   },
   {
     "revision": "88fbd3d397ae3690d5f2",
     "url": "/portfolio/static/js/runtime-main.fb1b3dac.js"
   },
   {
-    "revision": "ddc250127189a3b4ee4802e6c2493757",
-    "url": "/portfolio/static/media/github.ddc25012.svg"
+    "revision": "a9f7ad3dc6d998df5c984f5363913c7f",
+    "url": "/portfolio/static/media/github.a9f7ad3d.svg"
   },
   {
     "revision": "d5065e16cbcac5e48dd584acc13c3c43",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/koyo-learning.f7afe34b.png"
   },
   {
-    "revision": "4b475fb3f54b3e35daa04295ec48df4c",
-    "url": "/portfolio/static/media/linkedin.4b475fb3.svg"
+    "revision": "fe9eb2caea119be25f942487963b2e49",
+    "url": "/portfolio/static/media/linkedin.fe9eb2ca.svg"
   },
   {
     "revision": "04d5f9d69dc66f86a2aed31c116ae45b",
@@ -46,9 +46,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c1e2c997a1ab9c39d84527cb54b0b04d",
     "url": "/portfolio/static/media/wip.c1e2c997.png"
-  },
-  {
-    "revision": "7941e4573907e19a073656b34fe16b62",
-    "url": "/portfolio/static/media/xing.7941e457.svg"
   }
 ]);
