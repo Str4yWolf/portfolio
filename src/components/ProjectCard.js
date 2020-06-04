@@ -1,4 +1,5 @@
 import React from 'react';
+import TagItem from './TagItem';
 
 const ProjectCard = ({ image, title, description, role, tools, demo='', code='', info='', meta }) => {
 
@@ -30,9 +31,13 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
   				</div>
 
     const mainInfo = <div className="mainInfo">
-						<strong>Role: </strong>{role}
+						<strong>Role: </strong>{ role.split(',').map((item, key) => {
+							return <TagItem key={key} text={item} />
+						})}
 						<br />
-						<strong>Tools: </strong>{tools}
+						<strong>Tools: </strong>{ tools.split(',').map((item, key) => {
+							return <TagItem key={key} text={item} alternate />
+						})}
 				  	</div>
 
 	const bottom = <div className="bottom">

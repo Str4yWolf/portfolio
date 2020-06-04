@@ -18,7 +18,7 @@ const App = () => {
   const projectItems = [{ image: ProjectWIP,
                           title: 'Web Development 2020',
                           description: 'A project focused on modern web development and program design patterns. The objective is to do freelance web development and build various web apps across several domains (e.g., educational, practical tools, small business solutions, ...).',
-                          role: 'Front-end developer, web designer, back-end developer',
+                          role: 'Front-end Developer, Web Designer, Back-end Developer',
                           tools: 'HTML5, CSS3, VanillaJS, React.js, Node.js, Express.js, SASS, MySQL',
                           demo: '',
                           code: '',
@@ -27,7 +27,7 @@ const App = () => {
                           { image: ProjectStockhub,
                           title: 'Stockhub',
                           description: 'A finance platform that unites traders and people interested in stock trading. The aim is to create a scaleable platform with an optimized user experience.',
-                          role: 'Front-end developer, management team, back-end trainee, late co-founder',
+                          role: 'Front-end Developer, Management Team, Back-end Trainee, Late Co-founder',
                           tools: 'React.js, React Semantic UI, Node.js, Express.js, Confluence',
                           demo: '',
                           code: '',
@@ -36,7 +36,7 @@ const App = () => {
                         { image: ProjectKoyoLearning,
                           title: 'Koyo Learning',
                           description: 'A gamified remote learning platform to provide an immersive classroom experience. Hackathon idea to help provide education in times of physical social distancing. The goal was to come up with and pitch an actionable business solution while developing and demonstrating a working prototype.',
-                          role: 'Research analyst, gamification designer',
+                          role: 'Research Analyst, Gamification Designer',
                           tools: 'Google Docs, AdobeXD',
                           demo: '',
                           code: '',
@@ -45,7 +45,7 @@ const App = () => {
                           { image: ProjectKanaSensei,
                           title: 'Kana Sensei',
                           description: 'A gamified web app to help learn the Japanese phonetic script (Kana). The goal was to research how the use of game design elements affects learning. Key aspects were intuitive and minimalist design combined with UX design and learning theory (Spaced Repetition).',
-                          role: 'Front-end developer, UX / gamification designer, researcher',
+                          role: 'Front-end Developer, UX / Gamification Designer, Researcher',
                           tools: 'Vue.js, Quasar, WordPress',
                           demo: 'https://str4ywolf.github.io/#/',
                           code: 'https://github.com/Str4yWolf/Gamification-of-Kana',
@@ -83,7 +83,7 @@ const App = () => {
         <div id="specialization" className="specialization">
           <span className="specialization-banner" />
           <GapSpacer height="6vh" />
-          <h1>How I could help</h1>
+          <h1>What I do</h1>
           <div className="grid">
             <span>
               <h2>Front-end development</h2>
