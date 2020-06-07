@@ -9,6 +9,10 @@
 	scroll-behavior: smooth;
 }
 
+:root {
+	overflow-x: hidden;
+}
+
 $accent-color: #ff5900;
 $primary-color: #ff5900;
 $secondary-color: #a538ff;
@@ -39,6 +43,32 @@ p {
 	}
 }
  
+#block1 {
+	position: absolute;
+
+	top: 9vh;
+	right: 4vw;
+
+	width: 16vmin;
+	height: 16vmin;
+
+	background: $accent-color;
+	opacity: 0.2;
+}
+
+#block2 {
+	position: absolute;
+
+	top: 6vh;
+	right: 8vw;
+
+	width: 15vmin;
+	height: 15vmin;
+
+	background: $secondary-color;
+	opacity: 0.1;
+}
+
 header {
 	// ok
 	z-index: 10;
@@ -51,7 +81,7 @@ nav {
 	height: 42px;
 	background: white;
 	text-align: center;
-	border-bottom: 2px solid rgba(0,0,0,0.9);
+	border-bottom: 1px solid rgba(127,127,127,0.5);
 	a {
 		display: inline-block;
 		position: relative;
@@ -195,11 +225,26 @@ main {
 	}
 }
 
+#footer-line {
+	display: block;
+	height: 5px;
+	width: 100%;
+	background: $primary-color;
+}
 
 footer {
 	margin: 10vh auto 5vh auto;
-}
 
+	#imprint {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	div {
+		padding-top: 4vh;
+		font-size: 0.75rem;
+	}
+}
 
 
 
@@ -307,7 +352,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 8192px) {
+@media only screen and (max-width: 8640px) {
 	.grid {
 		grid-template-rows: repeat(1, 1fr);
 		grid-template-columns: repeat(3, 1fr);

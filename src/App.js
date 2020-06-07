@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.scss';
 import GapSpacer from './components/GapSpacer';
 import ProjectCard from './components/ProjectCard';
@@ -10,6 +10,8 @@ import ProjectStockhub from './assets/stockhub.png';
 import ProjectWIP from './assets/wip.png';
 
 const App = () => {
+
+  const [showImprint, setShowImprint] = useState(false);
 
   const navItems = [{ title: 'Home', href: '#App' },
                     { title: 'About', href: '#specialization' },
@@ -54,7 +56,8 @@ const App = () => {
   return (
     <div id="App" className="App">
 
-
+      <div id="block1" />
+      <div id="block2" />
 
       <main id="about">
         <div className="about">  
@@ -156,13 +159,17 @@ const App = () => {
                                         />) }
         </div>
 
-        <GapSpacer height="45vh" />
+        <GapSpacer height="15vh" />
         <p>Would be happy to get in touch with you!</p>
 
         <GapSpacer height="10vh" />
         
+        <span id="footer-line" />
+        
+        <GapSpacer height="10vh" />
+
         <div className="social">
-          <a href="https://www.linkedin.com/in/michael-woei-kang-huang-274631194/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/michael-woei-kang-huang/" target="_blank" rel="noopener noreferrer">
             <img 
               src={SocialLinkedIn} 
               alt="Michael Woei Kang Huang on LinkedIn"
@@ -181,9 +188,21 @@ const App = () => {
         </div>
       </main>
 
-
       <footer id="footer">
         <sup>&copy; 2020, Michael Woei Kang Huang</sup>
+
+        <br />
+        <sub
+          id="imprint"
+          onClick={() => setShowImprint(!showImprint)}
+            >Imprint</sub>
+        {
+          showImprint && <div>
+            Angerburger Str. 1<br />
+            27356 Rotenburg<br />
+            Germany
+          </div>
+        }
       </footer>
     </div>
   );
