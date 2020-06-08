@@ -63,7 +63,7 @@ const App = () => {
         <div className="about">  
           <h2>Intuitive and user-friendly web apps augmented with functional design.</h2>
           <p>
-             I'm an aspiring web developer with a passion for building educational apps and little tools to help you achieve your goal. 
+             An aspiring web developer with a passion for building educational apps and little tools to help you achieve your goal. 
           </p>
 
         <a href="#specialization">
@@ -84,67 +84,67 @@ const App = () => {
       </header>
 
         <div id="specialization" className="specialization">
-          <span className="specialization-banner" />
-          <GapSpacer height="6vh" />
-          <h1>What I do</h1>
-          <div className="grid">
-            <span>
-              <h2>Front-end development</h2>
-              <p>
-                Themed websites with a focus on simple, interactive UX design. 
-              </p>
-              <br />
-              <p>
-                <h4>Main tools</h4>
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3 / SASS</li>
-                  <li>VanillaJS / React.js</li>
-                  <li>Interactive design</li>
-                </ul>
-              </p>
-            </span>
-            <span>
-              <h2>Web app development</h2>
-              <p>
-                Web app tools to solve simple or more complex tasks.
-              </p>
-              <br />
-              <p>
-                <h4>Main tools</h4>
-                <ul>
-                  <li>React.js</li>
-                  <li>Node.js</li>
-                  <li>Functional design</li>
-                  <li>Learning theory</li>
-                </ul>
-              </p>
-            </span>
-            <span>
-              <h2>Learning and research</h2>
-              <p>
-                I enjoy learning new technologies and doing research to help develop better products.
-              </p>
-              <p>
-                <h4>Main interests</h4>
-                <ul>
-                  <li>Back-end development</li>
-                  <li>Programming to solve problems</li>
-                  <li>Language learning</li>
-                  <li>Gamification</li>
-                </ul>
-              </p>
-            </span>
-          </div>
+          <p className="about-me">
+          <h1>Hey there, I'm Michael.</h1>
+            <br />
+            I have discovered my passion for web development last year while doing my Bachelor's project. I've since gained practical experience in developing and maintaining front-ends for small and agile projects. My main focuses are single-page and web apps, as well as e-learning and gamification.
+            <br />
+            <br />
+            Besides programming, I enjoy learning languages, different cultures, and travel.
+            <br />
+            <br />
+            <i className="material-icons">code</i>
+            <i className="material-icons">translate</i>
+            <i className="material-icons">public</i>
+
+          </p>
+          
         </div>
 
-        <GapSpacer height="25vh" />
+
+
+        <div id="about-skills">
+          <div id="div1">
+              <i className="material-icons">blur_on</i>
+              <span>
+                <h2>Front-end development</h2>
+                  I build themed websites with a focus on simple and interactive UX design. 
+                  <br />
+                  <br />
+                  <strong>Main tools: </strong><span>HTML5, CSS3, SASS, VanillaJS / React.js, Interactive Design</span>
+                </span>
+            </div>
+            <div id="div2">
+              <i className="material-icons">emoji_objects</i>
+              <span>
+                <h2>Web app development</h2>
+                  I design and develop web apps to solve simple or more complex tasks.
+                  <br/ >
+                  <br />
+                  <strong>Main tools: </strong><span>React.js, Node.js, Functional Design, Learning Theory</span>
+              </span>
+            </div>
+            <div id="div3">
+              <i className="material-icons">school</i>
+                <span>
+                  <h2>Learning and research</h2>
+                  I enjoy learning new technologies and doing research to help develop better products.
+                    <br/ >
+                  <br />
+                  <strong>Main topics: </strong><span>Back-end Development, Programming to solve problems, Language Learning, Gamification</span>
+                </span>
+            </div>
+        </div>
+
+        
+        <GapSpacer height="5vh" />
 
         <div id="projects" className="projects">
         <GapSpacer height="10vh" />
-          <h1>Projects</h1>
-
-          <GapSpacer height="5vh" />
+          <div id="projects-banner">
+            <h1>Projects</h1>
+          </div>
+          <GapSpacer height="10vh" />
 
           { projectItems.map(project => <ProjectCard
                                           image={project.image}
