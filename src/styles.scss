@@ -143,7 +143,7 @@ main {
 	}
 
 	#about-skills {
-		padding: 5vh 10vw;
+		padding: 5vh 20vw 5vh 10vw;
 		div, span, h2, h4 {
 			text-align: left;
 			margin: 0;
@@ -403,6 +403,7 @@ footer {
 		font-size: 1.25em;	
 	}
 	p { font-size: 0.9em; }
+	.about-me{ font-size: 1.1rem; }
 	.about {
 		width: 75%;
 	}
@@ -416,10 +417,11 @@ footer {
 	h1, h2 {
 		font-size: 1em;	
 	}
-	p { font-size: 0.8em; }
+	p{ font-size: 0.8em; }
 	.about {
 		width: 75%;
 	}
+	.about-me{ font-size: 1.1rem; }
 	.grid {
 		grid-template-rows: repeat(3, 1fr);
 		grid-template-columns: repeat(1, 1fr);
