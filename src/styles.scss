@@ -1,5 +1,4 @@
 * {
-	// ok
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -9,9 +8,7 @@
 	scroll-behavior: smooth;
 }
 
-:root {
-	overflow-x: hidden;
-}
+
 
 $accent-color: #ff5900;
 $primary-color: #ff5900;
@@ -22,7 +19,6 @@ $tertiary-color: #0464ff;
 
 
 h1, h2, h3, h4, h5, h6 {
-	// ok
 	margin: 1vh 1vw 2vh 1vw;
 }
 
@@ -142,54 +138,10 @@ main {
 		}		
 	}
 
+
 	#about-skills {
 		padding: 5vh 20vw 5vh 10vw;
-		div, span, h2, h4 {
-			text-align: left;
-			margin: 0;
-		}
-		div {
-			display: grid;
-			grid-template-columns: 1fr 4fr;
-			grid-template-rows: 1fr;
-
-			font-size: 120%;
-			padding: 5vh 0;
-		}
-		h2 { padding: 1vh 0 }
-		#div1 h2, #div1 i { color: $primary-color }
-		#div2 h2, #div2 i { color: $secondary-color }
-		#div3 h2, #div3 i { color: $tertiary-color }
-		i {
-			font-size: 300%;
-			padding: 4vmin;
-		}
-		.tag-enumerator {
-			font: {
-				size: 1rem;
-				weight: bold;
-			}
-			margin: 0.5vmin;
-			padding: 4px 8px;
-			background: white;
-			border-radius: 6px;
-			&.primary {
-					color: $primary-color;
-					border: 2px solid $primary-color;
-			}
-			&.secondary {
-				color: $secondary-color;
-				border: 2px solid $secondary-color;
-			}
-			&.tertiary {
-				color: $tertiary-color;
-				border: 2px solid $tertiary-color;
-			}
-
-			&:hover {
-				cursor: default;
-			}
-		}
+		
 	}
 	.projects {
 		display: flex;
@@ -276,6 +228,7 @@ footer {
 	width: 100%;
 	background: $primary-color;
 	border-top: 5px solid $tertiary-color;
+	margin-bottom: 10vh;
 }
 .project-card-grid {
 	display: grid;
@@ -341,6 +294,47 @@ footer {
 		}
 	}
 }
+
+
+.skill-card {
+	* {
+		text-align: left;
+		margin: 0;
+	}
+
+	display: grid;
+	grid-template: 1fr / 1fr 4fr;
+
+	font-size: 120%;
+	padding: 5vh 0;
+
+	h2 {
+		padding: 1vh 0
+	}
+
+	i {
+		font-size: 300%;
+		padding: 4vmin;
+	}
+
+
+	&:nth-child(3n + 1) {
+		h2, i {
+			color: $primary-color;
+		}
+	}
+	&:nth-child(3n + 2) {
+		h2, i {
+			color: $secondary-color;
+		}
+	}
+	&:nth-child(3n) {
+		h2, i {
+			color: $tertiary-color;
+		}
+	}
+}
+
 
 .tag-item {
 	display: inline-block;

@@ -1,0 +1,46 @@
+[
+  { 
+    "image": "wip.png",
+    "title": "Web Development 2020",
+    "description": "A project focused on modern web development and program design patterns. The objective is to do freelance web development and build various web apps across several domains (e.g., educational, practical tools, small business solutions, ...).",
+    "role": "Front-end Developer, Web Designer, Back-end Developer",
+    "tools": "HTML5, CSS3, VanillaJS, React.js, Node.js, Express.js, SASS, MySQL",
+    "demo": "",
+    "code": "",
+    "info": "https://github.com/Str4yWolf/webdev2020",
+    "meta": "Learn and Develop; 2020"
+  },
+  { 
+    "image": "stockhub.png",
+    "title": "Stockhub",
+    "description": "A finance platform that unites traders and people interested in stock trading. The aim is to create a scaleable platform with an optimized user experience.",
+    "role": "Front-end Developer, Management Team, Back-end Trainee, Late Co-founder",
+    "tools": "React.js, React Semantic UI, Node.js, Express.js, Confluence",
+    "demo": "",
+    "code": "",
+    "info": "https://www.stockhub.de/",
+    "meta": "Startup Project; Since December 2019" 
+  },
+  { 
+    "image": "koyo-learning.png",
+    "title": "Koyo Learning",
+    "description": "A gamified remote learning platform to provide an immersive classroom experience. Hackathon idea to help provide education in times of physical social distancing. The goal was to come up with and pitch an actionable business solution while developing and demonstrating a working prototype.",
+    "role": "Research Analyst, Gamification Designer",
+    "tools": "Google Docs, AdobeXD",
+    "demo": "",
+    "code": "",
+    "info": "https://devpost.com/software/koyo-learning",
+    "meta": "EuVSVirus Hackathon; April 24 - 27, 2020" 
+  },
+  { 
+    "image": "kana-sensei.png",
+    "title": "Kana Sensei",
+    "description": "A gamified web app to help learn the Japanese phonetic script (Kana). The goal was to research how the use of game design elements affects learning. Key aspects were intuitive and minimalist design combined with UX design and learning theory (Spaced Repetition).",
+    "role": "Front-end Developer, UX / Gamification Designer, Researcher",
+    "tools": "Vue.js, Quasar, WordPress",
+    "demo": "https://str4ywolf.github.io/#/",
+    "code": "https://github.com/Str4yWolf/Gamification-of-Kana",
+    "info": "https://kanasensei.wordpress.com/",
+    "meta": "Bachelor's Project; April - October 2019" 
+  }
+]

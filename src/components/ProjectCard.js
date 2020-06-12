@@ -22,7 +22,7 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
 
 
     const left = <span className="left">
-  			  	    <img src={imageSrc} alt={title} />
+  			  	    <img src={ require(`../assets/${imageSrc}`) } alt={title} />
   			    </span>
 
     const mainDesc = <div className="mainDesc">
