@@ -10,10 +10,10 @@
 
 
 
-$accent-color: #ff5900;
-$primary-color: #ff5900;
-$secondary-color: #a538ff;
-$tertiary-color: #0464ff;
+$accent-color: #ee1044;
+$primary-color: #d43f62;
+$tertiary-color: #3fd48f;
+$secondary-color: #acd43f;
 
 
 
@@ -31,6 +31,7 @@ p {
 
 .material-icons {
 	transition: transform 0.5s;
+
 	&:hover {
 		transform: scale(1.2);
 	}
@@ -39,6 +40,7 @@ p {
 	}
 }
  
+
 #block1 {
 	position: absolute;
 
@@ -65,8 +67,8 @@ p {
 	opacity: 0.1;
 }
 
+
 header {
-	// ok
 	z-index: 10;
 	position: sticky;
 	top: 0;
@@ -78,6 +80,7 @@ nav {
 	background: white;
 	text-align: center;
 	border-bottom: 1px solid rgba(127,127,127,0.5);
+
 	a {
 		display: inline-block;
 		position: relative;
@@ -85,6 +88,7 @@ nav {
 		text-decoration: none;
 		padding: 11px 2vw 9px 2vw;
 		transition: background 0.5s, color 0.5s;
+
 		&:hover {
 			background: $primary-color;
 			color: white;

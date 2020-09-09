@@ -21,6 +21,16 @@
     "info": "https://www.stockhub.de/",
     "meta": "Startup Project; Since December 2019" 
   },
+  {
+    "image": "japp.png",
+    "title": "JAPP - Your Job Application Manager",
+    "description": "A learning project focused on production level coding with clean code, testing, versioning, and a real use case.",
+    "role": "Front-end Developer, Project Manager",
+    "tools": "React.js, SASS, pseudo REST API, Jest, Cypress",
+    "demo": "https://mwkhuang.com/japp",
+    "code": "https://github.com/Str4yWolf/japp",
+    "meta": "Fun Side Project; Since August 2020"
+  },
   { 
     "image": "koyo-learning.png",
     "title": "Koyo Learning",

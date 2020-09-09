@@ -112,7 +112,8 @@ const App = () => {
 
 
         <GapSpacer height="15vh" />
-        <p>Would be happy to get in touch with you!</p>
+        <p>Please see below for contact details.</p>
+        <p>Thank you!</p>
 
         <GapSpacer height="10vh" />
         
@@ -135,6 +136,8 @@ const App = () => {
 
 
       <footer id="footer">
+        <sup>Portfolio v1.0.1 (Fall Colours)</sup>
+        <br/>
         <sup>&copy; 2020, Michael Woei Kang Huang</sup>
 
         <br />
@@ -144,9 +147,15 @@ const App = () => {
             >Imprint</sub>
         {
           showImprint && <div>
+            <strong>Website run by:</strong><br />
+            Michael Woei Kang Huang<br />
             Angerburger Str. 1<br />
             27356 Rotenburg<br />
-            Germany
+            Germany<br/>
+            <br />
+            <strong>Email:</strong> huang@mwkhuang.com<br/>
+            <br />
+            <a href="#">mwkhuang.com</a> is a personal web developer portfolio website.
           </div>
         }
       </footer>
