@@ -33,11 +33,14 @@ const App = () => {
 
 
 
-      <main id="about">
+      <main>
         <div className="about">  
-          <h2>Intuitive and user-friendly web apps augmented with functional design.</h2>
+          <h2>To connect and grow through the web.</h2>
           <p>
-             An aspiring web developer with a passion for building educational apps and little tools to help you achieve your goal. 
+             I create websites and web apps with user value and design thinking in mind. 
+          </p>
+          <p>
+            To help people connect and achieve their goals better.
           </p>
 
           <a href="#specialization">
@@ -59,12 +62,18 @@ const App = () => {
         <div id="specialization" className="specialization">
 
           <p className="about-me">
-          <h1>Hey there, I'm Michael.</h1>
+          <h1>Hey everyone, I'm Michael.</h1>
             <br />
-            I have discovered my passion for web development last year while doing my Bachelor's project. I've since gained practical experience in developing and maintaining front-ends for small and agile projects. My main focuses are single-page and web apps, as well as e-learning and gamification.
+              I've been a <strong>passionate web developer for 2 years</strong> and have a Computer Science background. My biggest fields of interest include productivity tools, e-learning, and information and communication platforms.
             <br />
             <br />
-            Besides programming, I enjoy learning languages, different cultures, and travel.
+              I enjoy <strong>collaborating</strong> with different and diverse teams as they provide a great environment to exchange new ideas and grow one's field of vision.
+            <br />
+            <br />
+              My vision is to <strong>contribute</strong> to human society as a driver of growth and also to encourage interdisciplinary and intercultural interaction, as I believe we can learn a lot from one another.
+            <br />
+            <br />
+              In general, I'd describe myself as a passionate <strong>problem solver</strong> with a knack for cultures, languages, and travel. I also like to contemplate life and try to get the most out of it - e.g., through life hacks.
             <br />
             <br />
 

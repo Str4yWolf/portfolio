@@ -10,10 +10,6 @@ const SkillCard = ({iconName, header, description, tools, toolsLabel = 'Tags: '}
       <span>
         <h2>{ header }</h2>
         { description } 
-        <br />
-        <br />
-
-        <strong>{ toolsLabel }</strong><span>{ tools }</span>
       </span>
     </div>
   );
