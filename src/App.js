@@ -18,7 +18,7 @@ const App = () => {
   const [showImprint, setShowImprint] = useState(false);
 
   const navItems = [{ title: 'Home', href: '#' },
-                    { title: 'About', href: '#specialization' },
+                    { title: 'About', href: '#about' },
                     { title: 'Projects', href: '#projects' },
                     { title: 'Social', href: '#footer' }];
 
@@ -34,7 +34,7 @@ const App = () => {
 
 
       <main>
-        <div className="about">  
+        <div className="intro">  
           <h2>To connect and grow through the web.</h2>
           <p>
              I create websites and web apps with user value and design thinking in mind. 
@@ -43,7 +43,7 @@ const App = () => {
             To help people connect and achieve their goals better.
           </p>
 
-          <a href="#specialization">
+          <a href="#about">
             <button>Learn more</button>
           </a>
 
@@ -67,7 +67,7 @@ const App = () => {
 
 
 
-        <div id="specialization" className="specialization">
+        <div id="about" className="about">
 
           <p className="about-me">
           <h1>Hey everyone, I'm Michael.</h1>
@@ -155,7 +155,7 @@ const App = () => {
 
 
       <footer id="footer">
-        <sup>Portfolio v1.0.1 (Fall Colours)</sup>
+        <sup>Portfolio v1.0.5 (Fall Colours)</sup>
         <br/>
         <sup>&copy; 2020, Michael Woei Kang Huang</sup>
 
