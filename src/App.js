@@ -52,6 +52,14 @@ const App = () => {
 
 
         <header id="home" className="home">
+          <p className="home-portal">
+            <a href="#">
+              <span>M</span>
+              <span>W</span>
+              <span>K</span>
+              <span>H</span>
+            </a>
+          </p>
           <nav>
             { navItems.map(item => <a href={item.href} onClick={item.scroll}>{ item.title }</a> ) }
           </nav>
@@ -100,9 +108,10 @@ const App = () => {
 
         
 
-        <GapSpacer height="15vh" />
+        <GapSpacer height="9vh" />
 
         <div id="projects" className="projects">
+          <GapSpacer height="6vh" />
           <div id="projects-banner">
             <h1>Projects</h1>
           </div>
