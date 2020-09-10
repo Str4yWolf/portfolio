@@ -22,7 +22,7 @@ const App = () => {
                     { title: 'Projects', href: '#projects' },
                     { title: 'Social', href: '#footer' }];
 
-
+  const colorClasses = ["primary", "secondary", "tertiary"]
 
   return (
     <div id="App" className="App">
@@ -88,12 +88,13 @@ const App = () => {
 
 
         <div id="about-skills">
-            { skillItems.map(skill => <SkillCard
+            { skillItems.map((skill, index) => <SkillCard
                                         iconName={skill.iconName}
                                         header={skill.header}
                                         description={skill.description}
                                         tools={skill.tools}
                                         toolsLabel={skill.toolsLabel}
+                                        colorClass={colorClasses[index]}
                                       />) }
         </div>
 

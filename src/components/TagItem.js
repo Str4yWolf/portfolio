@@ -1,13 +1,19 @@
 import React from 'react';
 import '../styles.scss';
 
-const TagItem = ({ text, alternate=false }) => {
+const TagItem = ({ text, alternate=false, colorClass="" }) => {
 
 	let content;
 	if (!alternate) {
-		content = <div className="tag-item">
-			{ text }
-		</div>
+		if (colorClass) {
+			content = <div className={`tag-item ${colorClass}`}>
+				{ text }
+			</div>
+		} else {
+			content = <div className="tag-item">
+				{ text }
+			</div>
+		}
 	} else {
 		content = <div className="tag-item alternate">
 			{ text }

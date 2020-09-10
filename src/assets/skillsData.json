@@ -3,21 +3,21 @@
     "iconName": "blur_on",
     "header": "Front-end development",
     "description": "I build themed websites with a focus on intuitive and interactive UX design. To help people share their ideas with the world in a user-friendly way.",
-    "tools": "HTML5, CSS3, SASS, VanillaJS / React.js, Interactive Design",
-    "toolsLabel": "Main tools: "
+    "tools": "HTML5, CSS3, VanillaJS; React.js, Vue.js",
+    "toolsLabel": ""
   },
   { 
     "iconName": "emoji_objects",
     "header": "Web app development",
     "description": "I create web apps to solve problems ranging from everyday productivity support to more complex tasks such as creating a learning experience. To help people achieve better in the long run.",
-    "tools": "React.js, Node.js, Functional Design, Learning Theory",
-    "toolsLabel": "Main tools: "
+    "tools": "React.js, SASS, npm, Git; REST, SQL",
+    "toolsLabel": ""
   },
   { 
     "iconName": "school",
     "header": "Understanding and learning",
     "description": "I enjoy doing research and learning new things to better understand the problems at hand and help making better informed decisions on what kinds of solutions to offer under given circumstances.",
-    "tools": "Back-end Development, Programming to solve problems, Language Learning, Gamification",
-    "toolsLabel": "Main topics: "
+    "tools": "Full-stack, Project Management, Knowledge Acquisition, Gamification",
+    "toolsLabel": ""
   }
 ]
