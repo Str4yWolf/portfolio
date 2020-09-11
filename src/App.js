@@ -1,167 +1,64 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles.scss';
 
+import Intro from './sections/Intro';
+import Header from './sections/Header';
+import About from './sections/About';
+import Imprint from './sections/Imprint';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import Social from './sections/Social';
+
 import GapSpacer from './components/GapSpacer';
-import MaterialIcon from './components/MaterialIcon';
-
-import ProjectCard from './components/ProjectCard';
-import SkillCard from './components/SkillCard';
-import SocialItem from './components/SocialItem';
-
-import skillItems from './assets/skillsData.json';
-import projectItems from './assets/projectsData.json';
-import socialItems from './assets/socialData.json';
 
 
 const App = () => {
 
-  const [showImprint, setShowImprint] = useState(false);
+  const bottomText = <>
+    <p>Please see below for contact details.</p>
+    <p>Thank you!</p>
+  </>
 
-  const navItems = [{ title: 'Home', href: '#' },
-                    { title: 'About', href: '#about' },
-                    { title: 'Projects', href: '#projects' },
-                    { title: 'Social', href: '#social' }];
+  const footerText = <>
+    <sup>Portfolio v1.0.6 (Fall Colours)</sup>
+    <br/>
+    <sup>&copy; 2020, Michael Woei Kang Huang</sup>
+  </>
 
-  const colorClasses = ["primary", "secondary", "tertiary"]
+
+  const decoration = <>
+    <div id="block1" />
+    <div id="block2" />
+  </>
+
+  const mainSection = <main>
+    <Intro />
+    <Header />
+    <About />
+    <Skills />
+
+    <GapSpacer height="9vh" />
+
+    <Projects />
+
+    <GapSpacer height="15vh" />
+    { bottomText }      
+    <GapSpacer height="10vh" />
+  </main>
+
+  const footerSection = <footer id="footer" className="footer">
+    <Social />
+    <GapSpacer height="5vh" />
+    { footerText }
+    <Imprint />
+  </footer>
+
 
   return (
     <div id="App" className="App">
-
-      <div id="block1" />
-      <div id="block2" />
-
-      <main>
-        <div className="intro">  
-          <h2>To connect and grow through the web.</h2>
-          <p>
-             I create websites and web apps with user value and design thinking in mind. 
-          </p>
-          <p>
-            To help people connect and achieve their goals better.
-          </p>
-
-          <a href="#about">
-            <button>Learn more</button>
-          </a>
-        </div>
-
-
-        <header id="home" className="home">
-          <p className="home-portal">
-            <a href="#">
-              <span>M</span>
-              <span>W</span>
-              <span>K</span>
-              <span>H</span>
-            </a>
-          </p>
-          <nav>
-            { navItems.map(item => <a href={item.href} onClick={item.scroll}>{ item.title }</a> ) }
-          </nav>
-        </header>
-
-
-        <div id="about" className="about">
-          <h1>Hey everyone, I'm Michael.</h1>
-          <p>
-          
-              I've been a <strong>passionate web developer for 2 years</strong> and have a Computer Science background. My biggest fields of interest include productivity tools, e-learning, and information and communication platforms.
-            <br />
-            <br />
-              I enjoy <strong>collaborating</strong> with different and diverse teams as they provide a great environment to exchange new ideas and grow one's field of vision.
-            <br />
-            <br />
-              My vision is to <strong>contribute</strong> to human society as a driver of growth and also to encourage interdisciplinary and intercultural interaction, as I believe we can learn a lot from one another.
-            <br />
-            <br />
-              In general, I'd describe myself as a passionate <strong>problem solver</strong> with a knack for cultures, languages, and travel. I also like to contemplate life and try to get the most out of it - e.g., through life hacks.
-            <br />
-            <br />
-            <br />
-
-            <MaterialIcon name="code" />
-            <MaterialIcon name="translate" />
-            <MaterialIcon name="public" />
-
-          </p> 
-        </div>
-
-        <div id="skills" className="skills">
-            { skillItems.map((skill, index) => <SkillCard
-                                        iconName={skill.iconName}
-                                        header={skill.header}
-                                        description={skill.description}
-                                        tools={skill.tools}
-                                        toolsLabel={skill.toolsLabel}
-                                        colorClass={colorClasses[index]}
-                                      />) }
-        </div>
-
-        <GapSpacer height="9vh" />
-
-        <div id="projects" className="projects">
-          <GapSpacer height="6vh" />
-          <div className="projects-banner">
-            <h1>Projects</h1>
-          </div>
-
-          { projectItems.map(project => <ProjectCard
-                                          image={project.image}
-                                          title={project.title}
-                                          description={project.description}
-                                          role={project.role}
-                                          tools={project.tools}
-                                          demo={project.demo}
-                                          code={project.code}
-                                          info={project.info}
-                                          meta={project.meta}
-                                        />) }
-        </div>
-
-        <GapSpacer height="15vh" />
-  
-        <p>Please see below for contact details.</p>
-        <p>Thank you!</p>
-
-        <GapSpacer height="10vh" />
-      </main>
-
-
-      <footer id="footer" className="footer">
-        <div id="social" className="social">
-          { socialItems.map(item => <SocialItem
-                                      href={item.href}
-                                      src={item.src}
-                                      alt={item.alt}
-                                    /> ) }
-        </div>
-
-        <GapSpacer height="5vh" />
-
-        <sup>Portfolio v1.0.5 (Fall Colours)</sup>
-        <br/>
-        <sup>&copy; 2020, Michael Woei Kang Huang</sup>
-
-        <br />
-        <sub
-          className="imprint-toggle"
-          onClick={() => setShowImprint(!showImprint)}
-            >Imprint</sub>
-        {
-          showImprint && <div className="imprint-content">
-            <strong>Website run by:</strong><br />
-            Michael Woei Kang Huang<br />
-            Angerburger Str. 1<br />
-            27356 Rotenburg<br />
-            Germany<br/>
-            <br />
-            <strong>Email:</strong> huang@mwkhuang.com<br/>
-            <br />
-            <a href="#">mwkhuang.com</a> is a personal web developer portfolio website.
-          </div>
-        }
-
-      </footer>
+      { decoration }
+      { mainSection }
+      { footerSection}
     </div>
   );
 }
