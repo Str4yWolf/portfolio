@@ -1,0 +1,40 @@
+$factor-breakpoint-med: 0.9;
+$factor-breakpoint-small: 0.8;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1vh 1vw 2vh 1vw;
+}
+
+p { 
+	font-size: 1.2rem;
+	margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        transform: scale($factor-breakpoint-med);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        transform: scale($factor-breakpoint-small);
+    }
+}

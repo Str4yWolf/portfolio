@@ -1,0 +1,25 @@
+#block1 {
+	position: absolute;
+
+	top: 9vh;
+	right: 4vw;
+
+	width: 16vmin;
+	height: 16vmin;
+
+	background: $accent-color;
+	opacity: 0.2;
+}
+
+#block2 {
+	position: absolute;
+
+	top: 6vh;
+	right: 8vw;
+
+	width: 15vmin;
+	height: 15vmin;
+
+	background: $secondary-color;
+	opacity: 0.1;
+}

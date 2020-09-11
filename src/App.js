@@ -20,18 +20,15 @@ const App = () => {
   const navItems = [{ title: 'Home', href: '#' },
                     { title: 'About', href: '#about' },
                     { title: 'Projects', href: '#projects' },
-                    { title: 'Social', href: '#footer' }];
+                    { title: 'Social', href: '#social' }];
 
   const colorClasses = ["primary", "secondary", "tertiary"]
 
   return (
     <div id="App" className="App">
 
-
       <div id="block1" />
       <div id="block2" />
-
-
 
       <main>
         <div className="intro">  
@@ -46,9 +43,7 @@ const App = () => {
           <a href="#about">
             <button>Learn more</button>
           </a>
-
         </div>
-
 
 
         <header id="home" className="home">
@@ -66,12 +61,10 @@ const App = () => {
         </header>
 
 
-
         <div id="about" className="about">
-
-          <p className="about-me">
           <h1>Hey everyone, I'm Michael.</h1>
-            <br />
+          <p>
+          
               I've been a <strong>passionate web developer for 2 years</strong> and have a Computer Science background. My biggest fields of interest include productivity tools, e-learning, and information and communication platforms.
             <br />
             <br />
@@ -84,18 +77,16 @@ const App = () => {
               In general, I'd describe myself as a passionate <strong>problem solver</strong> with a knack for cultures, languages, and travel. I also like to contemplate life and try to get the most out of it - e.g., through life hacks.
             <br />
             <br />
+            <br />
 
             <MaterialIcon name="code" />
             <MaterialIcon name="translate" />
             <MaterialIcon name="public" />
 
-          </p>
-          
+          </p> 
         </div>
 
-
-
-        <div id="about-skills">
+        <div id="skills" className="skills">
             { skillItems.map((skill, index) => <SkillCard
                                         iconName={skill.iconName}
                                         header={skill.header}
@@ -106,13 +97,11 @@ const App = () => {
                                       />) }
         </div>
 
-        
-
         <GapSpacer height="9vh" />
 
         <div id="projects" className="projects">
           <GapSpacer height="6vh" />
-          <div id="projects-banner">
+          <div className="projects-banner">
             <h1>Projects</h1>
           </div>
 
@@ -129,20 +118,17 @@ const App = () => {
                                         />) }
         </div>
 
-
         <GapSpacer height="15vh" />
+  
         <p>Please see below for contact details.</p>
         <p>Thank you!</p>
 
         <GapSpacer height="10vh" />
-        
-        <span id="footer-line" />
-        
-        <GapSpacer height="10vh" />
+      </main>
 
 
-
-        <div className="social">
+      <footer id="footer" className="footer">
+        <div id="social" className="social">
           { socialItems.map(item => <SocialItem
                                       href={item.href}
                                       src={item.src}
@@ -150,22 +136,19 @@ const App = () => {
                                     /> ) }
         </div>
 
-      </main>
+        <GapSpacer height="5vh" />
 
-
-
-      <footer id="footer">
         <sup>Portfolio v1.0.5 (Fall Colours)</sup>
         <br/>
         <sup>&copy; 2020, Michael Woei Kang Huang</sup>
 
         <br />
         <sub
-          id="imprint"
+          className="imprint-toggle"
           onClick={() => setShowImprint(!showImprint)}
             >Imprint</sub>
         {
-          showImprint && <div>
+          showImprint && <div className="imprint-content">
             <strong>Website run by:</strong><br />
             Michael Woei Kang Huang<br />
             Angerburger Str. 1<br />
@@ -177,6 +160,7 @@ const App = () => {
             <a href="#">mwkhuang.com</a> is a personal web developer portfolio website.
           </div>
         }
+
       </footer>
     </div>
   );

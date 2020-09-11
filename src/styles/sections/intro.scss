@@ -1,0 +1,8 @@
+.intro {
+	@extend %flex-col;
+
+	width: 50%;
+	height: 100vh;
+	font-size: 120%;
+	border-bottom: 1px solid #aaa;
+}

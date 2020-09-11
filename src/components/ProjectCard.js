@@ -21,9 +21,7 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
 
 
 
-    const left = <span className="left">
-  			  	    <img src={ require(`../assets/${imageSrc}`) } alt={title} />
-  			    </span>
+    const projectImage = <img src={ require(`../assets/${imageSrc}`) } alt={title} />
 
     const mainDesc = <div className="mainDesc">
   					<h3>{title}</h3>
@@ -48,14 +46,14 @@ const ProjectCard = ({ image, title, description, role, tools, demo='', code='',
 				  	
 
 	return (<div className="project-card">
-				<div className="project-card-grid">
-				{left}
-				<div className="main">
+				<div className="project-card-left">
+					{projectImage}
+				</div>
+				<div className="project-card-main">
 					{mainDesc}
 					{mainInfo}
 					{bottom}
 				</div>
-			</div>
 		</div>);
 };
 

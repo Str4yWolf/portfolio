@@ -1,0 +1,14 @@
+footer {
+	border-top: 5px solid $primary-color;
+	padding: 5rem;
+
+	.imprint-toggle {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.imprint-content {
+		padding-top: 4vh;
+		font-size: 0.75rem;
+	}
+}

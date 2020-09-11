@@ -1,0 +1,70 @@
+%primary-color-tag {
+	color: $primary-color;
+	border: 2px solid $primary-color;
+}
+
+%secondary-color-tag {
+	color: $secondary-color;
+	border: 2px solid $secondary-color;
+}
+
+%tertiary-color-tag {
+	color: $tertiary-color;
+	border: 2px solid $tertiary-color;
+}
+
+.tag-item {
+	
+    border-radius: 6px;
+	display: inline-block;
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin: 0.5vmin;
+	padding: 0.3rem 0.6rem;
+	transition: color 0.5s, border 0.5s;
+
+	&:not(.alternate .primary .secondary .tertiary) {
+		@extend %secondary-color-tag;
+
+		&:hover {
+			@extend %primary-color-tag;
+		}
+	}
+
+	&.alternate {
+		@extend %tertiary-color-tag;
+
+		&:hover {
+			@extend %primary-color-tag;
+		}
+	}
+
+	&.primary {
+		@extend %primary-color-tag;
+
+		&:hover {
+			@extend %secondary-color-tag;
+		}
+	}
+
+	&.secondary {
+		@extend %secondary-color-tag;
+
+		&:hover {
+			@extend %tertiary-color-tag;
+		}
+	}
+
+	&.tertiary {
+		@extend %tertiary-color-tag;
+
+		&:hover {
+			@extend %primary-color-tag;
+		}
+	}
+	
+
+	&:hover {
+		cursor: default;
+	}
+}

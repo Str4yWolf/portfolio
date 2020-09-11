@@ -1,0 +1,12 @@
+.projects {
+	@extend %flex-col;
+
+	&-banner {
+		background: $primary-color;
+		color: white;
+		border-top: 5px solid $tertiary-color;
+		margin-bottom: 10vh;
+		padding: 2vh 0;
+		width: 100%;
+	}
+}
