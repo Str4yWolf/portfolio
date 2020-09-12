@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import personalData from '../assets/personalData.json'
+import config from '../config/config'
 
 const Imprint = () => {
     const [showImprint, setShowImprint] = useState(false)
@@ -10,14 +12,18 @@ const Imprint = () => {
             Imprint
     </sub>
      
+    
+
     const imprintContent = <div className="imprint-content">
         <strong>Website run by:</strong><br />
-        Michael Woei Kang Huang<br />
-        Angerburger Str. 1<br />
-        27356 Rotenburg<br />
-        Germany<br/>
+        { config.visiblePersonal.map((dataKey, key) => {
+            return <React.Fragment key={key}>
+                { personalData[config.lang][dataKey] }
+                <br />
+            </React.Fragment>
+        }) }
         <br />
-        <strong>Email:</strong> huang@mwkhuang.com<br/>
+        <strong>Email:</strong> { personalData[config.lang]["email"]}<br/>
         <br />
         <a href="#">mwkhuang.com</a> is a personal web developer portfolio website.
     </div>

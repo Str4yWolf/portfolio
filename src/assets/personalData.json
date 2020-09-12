@@ -1,0 +1,23 @@
+{
+    "de": {
+        "name": "Michael Woei Kang Huang",
+        "addressStreet": "Angerburger Str. 1",
+        "addressCity": "27356 Rotenburg",
+        "addressCountry": "Deutschland",
+        "email": "huang@mwkhuang.com"
+    },
+    "en": {
+        "name": "Michael Woei Kang Huang",
+        "addressStreet": "Angerburger Str. 1",
+        "addressCity": "27356 Rotenburg",
+        "addressCountry": "Germany",
+        "email": "huang@mwkhuang.com"
+    },
+    "fr": {
+        "name": "Michael Woei Kang Huang",
+        "addressStreet": "Angerburger Str. 1",
+        "addressCity": "27356 Rotenburg",
+        "addressCountry": "Allemagne",
+        "email": "huang@mwkhuang.com"
+    }
+}
