@@ -23,7 +23,7 @@
 	padding: 0.3rem 0.6rem;
 	transition: color 0.5s, border 0.5s;
 
-	&:not(.alternate .primary .secondary .tertiary) {
+	&:not(.alternate):not(.primary):not(.secondary):not(.tertiary) {
 		@extend %secondary-color-tag;
 
 		&:hover {
