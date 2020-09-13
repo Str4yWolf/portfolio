@@ -1,18 +1,28 @@
 import React from 'react'
+import GapSpacer from '../components/GapSpacer'
 
 const Intro = () => {
-    return <div className="intro">  
-        <h2>To connect and grow through the web.</h2>
-        <p>
-            I create websites and web apps with user value and design thinking in mind. 
-        </p>
-        <p>
-        To help people connect and achieve their goals better.
-        </p>
+    return <div className="intro">
+        <GapSpacer height="10vh" />
+        <div className="intro-grid">
+            <div>
+                <h1>To build the web together.</h1>
+                <p>
+                    I create websites and web apps with user value and design thinking in mind. And I love to connect people through technology.
+                </p>
+            </div>
+            <div>
+            </div>
+        </div>
 
-        <a href="#about">
-        <button>Learn more</button>
-        </a>
+        <div className="intro-buttons">
+            <a href="#about">
+                <button className="accent">Learn more</button>
+            </a>
+            <a href="#social">
+                <button className="tertiary">Contact me</button>
+            </a>
+        </div>
     </div>
 }
 
