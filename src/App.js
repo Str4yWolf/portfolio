@@ -14,13 +14,13 @@ import GapSpacer from './components/GapSpacer';
 
 const App = () => {
 
-  const bottomText = <>
-    <p>Please see below for contact details.</p>
+  const bottomText = <div className="outro">
+    <p>Please see below for <strong>contact details</strong>.</p>
     <p>Thank you!</p>
-  </>
+  </div>
 
   const footerText = <>
-    <sup>Portfolio v1.0.6 (Fall Colours)</sup>
+    <sup>Portfolio v1.0.9 (Fall Colours)</sup>
     <br/>
     <sup>&copy; 2020, Michael Woei Kang Huang</sup>
   </>
@@ -43,7 +43,7 @@ const App = () => {
 
     <GapSpacer height="15vh" />
     { bottomText }      
-    <GapSpacer height="10vh" />
+    <GapSpacer height="5vh" />
   </main>
 
   const footerSection = <footer id="footer" className="footer">
