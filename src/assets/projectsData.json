@@ -18,8 +18,7 @@
     "tools": "React.js, React Semantic UI, Node.js, Express.js, Confluence",
     "demo": "",
     "code": "",
-    "info": "https://www.stockhub.de/",
-    "meta": "Startup Project; Since December 2019" 
+    "meta": "Startup Project; 2019 - 2022 (discontinued)" 
   },
   {
     "image": "japp.png",
@@ -27,9 +26,9 @@
     "description": "A learning project focused on production level coding with clean code, testing, versioning, and a real use case.",
     "role": "Front-end Developer, Project Manager",
     "tools": "React.js, SASS, pseudo REST API, Jest, Cypress",
-    "demo": "https://mwkhuang.com/japp",
+    "demo": "https://str4ywolf.github.io/japp",
     "code": "https://github.com/Str4yWolf/japp",
-    "meta": "Fun Side Project; Since August 2020"
+    "meta": "Fun Side Project; 2020"
   },
   { 
     "image": "koyo-learning.png",
