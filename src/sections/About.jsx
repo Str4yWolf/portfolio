@@ -6,7 +6,7 @@ const About = () => {
         <h1>Hey there, I'm Michael.</h1>
         <p>
         
-            A <strong>passionate web developer with 2 years experience</strong> and a Computer Science background. My biggest fields of interest include productivity tools, e-learning, and information and communication platforms.
+            A <strong>passionate web developer with 5 years experience</strong> and a Computer Science background. My biggest fields of interest include productivity tools, e-learning, and information and communication platforms.
             <br />
             <br />
                 I enjoy <strong>collaborating</strong> with different and diverse teams as they provide a great environment to exchange new ideas and grow one's field of vision.
