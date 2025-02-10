@@ -4,7 +4,6 @@ import './styles.scss';
 import Intro from './sections/Intro';
 import Header from './sections/Header';
 import About from './sections/About';
-import Imprint from './sections/Imprint';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Social from './sections/Social';
@@ -20,9 +19,9 @@ const App = () => {
   </div>
 
   const footerText = <>
-    <sup>Portfolio v1.0.9 (Fall Colours)</sup>
+    <sup>Portfolio v1.0.10 (Fall Colours)</sup>
     <br/>
-    <sup>&copy; 2020, Michael Woei Kang Huang</sup>
+    <sup>&copy; 2025, Michael Woei Kang Huang</sup>
   </>
 
 
@@ -50,7 +49,6 @@ const App = () => {
     <Social />
     <GapSpacer height="5vh" />
     { footerText }
-    <Imprint />
   </footer>
 
 
@@ -58,7 +56,7 @@ const App = () => {
     <div id="App" className="App">
       { decoration }
       { mainSection }
-      { footerSection}
+      { footerSection }
     </div>
   );
 }
